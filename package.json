@@ -1,5 +1,5 @@
 {
-  "name": "github-prettier-action",
+  "name": "gh-action-prettier-on-push",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VikashPR/Github-Prettier-Action.git"
+    "url": "git+https://github.com/danba340/gh-action-prettier-on-push.git"
   },
-  "author": "Vikash PR",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VikashPR/Github-Prettier-Action/issues"
+    "url": "https://github.com/danba340/gh-action-prettier-on-push/issues"
   },
-  "homepage": "https://github.com/VikashPR/Github-Prettier-Action#readme",
+  "homepage": "https://github.com/danba340/gh-action-prettier-on-push#readme",
   "dependencies": {},
   "devDependencies": {
     "prettier": "^2.1.1"
