@@ -1,11 +1,18 @@
 export function getAboutUsLink(language) {
   switch (language.toLowerCase()) {
-    case englishCode.toLowerCase():return "/about-us";
-    case spanishCode.toLowerCase():return "/acerca-de";
+    case englishCode.toLowerCase():
+      return "/about-us";
+    case spanishCode.toLowerCase():
+      return "/acerca-de";
   }
   return "";
 }
-export function getAboutUsLink(language) {switch (language.toLowerCase()) {case englishCode.toLowerCase():return "/about-us";case spanishCode.toLowerCase():
+export function getAboutUsLink(language) {
+  switch (language.toLowerCase()) {
+    case englishCode.toLowerCase():
+      return "/about-us";
+    case spanishCode.toLowerCase():
       return "/acerca-de";
-  }return "";
+  }
+  return "";
 }
