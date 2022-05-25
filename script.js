@@ -14,11 +14,4 @@
                 updateSummary: (summary, start, today) => dispatch(updateSummary(summary, start, today))}}
  
                     export default connect(null, mapDispatchToProps)(MarketContainer);
-          export function createConnect(                                      {connectHOC = connectAdvanced,
-                      mapStateToPropsFactories 
-                = defaultMapStateToPropsFactories,                                                    mapDispatchToPropsFactories 
-               =                                      defaultMapDispatchToPropsFactories,mergePropsFactories = 
-            defaultMergePropsFactories,
-            selectorFactory 
-              = 
-               defaultSelectorFactory})
+          export function createConnect({connectHOC = connectAdvanced,mapStateToPropsFactories = defaultMapStateToPropsFactories,mapDispatchToPropsFactories =defaultMapDispatchToPropsFactories,mergePropsFactories = defaultMergePropsFactories,selectorFactory = defaultSelectorFactory})
