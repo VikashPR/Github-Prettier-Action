@@ -21,6 +21,5 @@
             defaultMergePropsFactories,
             selectorFactory 
               = 
-               defaultSelectorFactory
-                      })
+               defaultSelectorFactory})
   
