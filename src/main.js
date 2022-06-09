@@ -2,21 +2,16 @@ function App() {
   var container = document.getElementById("container");
 
   // get the shape elements
-    var circle =
-        document.getElementById("circle");
-    var
-        square = document.getElementById("square");
+  var circle = document.getElementById("circle");
+  var square = document.getElementById("square");
   var triangle = document.getElementById("triangle");
   var pentagon = document.getElementById("pentagon");
 
   // animate function
-    function
-        animate(elem, startX, startY, bounce, duration)
-    {
+  function animate(elem, startX, startY, bounce, duration) {
     // set and store the start positions (they'll need to be the same for the end position too)
     let posStartX;
-        if (startX === "left")
-        {
+    if (startX === "left") {
       posStartX = 0;
     } else {
       posStartX = 100;
@@ -43,19 +38,15 @@ function App() {
             
                                                                         translateX(-180px)`
             : `translateX(${posStartX}vw)`;
-        translateY =                                                                `translateY(${startY}px)`;
+        translateY = `translateY(${startY}px)`;
       } else {
         // if we're on the right side we need to do an additional translate to account for the size of the shape div
-        translateX                          =
-            posX
-                === "right"
+        translateX =
+          posX === "right"
             ? `translateX(100vw) translateX(-180px)`
             : `translateX(0vw)`;
         // for randomly picking Y, we want to translate up or down so pick randomly from '-' or '' first, then pick the pixels randomly
-          translateY = `translateY(${
-            
-
-              
+        translateY = `translateY(${
           ["-", ""][Math.floor(Math.random() * 2)]
         }${Math.floor(Math.random() * 200)}px)`;
       }
@@ -63,9 +54,6 @@ function App() {
       // store the transformation
       let transform = `${translateX} ${translateY}`;
 
-        
-
-        
       keyframes.push({ transform: transform });
 
       // change the X position
@@ -79,10 +67,8 @@ function App() {
   }
 
   // animate!
-    animate(circle, "left", 12, 5, 36000);
-    
+  animate(circle, "left", 12, 5, 36000);
 
-    
   animate(square, "left", 60, 7, 37000);
   animate(triangle, "right", 27, 5, 38000);
   animate(pentagon, "right", 99, 7, 39000);
