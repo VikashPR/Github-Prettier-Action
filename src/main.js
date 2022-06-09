@@ -31,7 +31,8 @@ function App() {
         // if we're on the right side we need to do an additional translate to account for the size of the shape div
         translateX =
           startX === "right"
-            ? `translateX(${posStartX}vw)translateX(-180px)`: `translateX(${posStartX}vw)`;
+            ? `translateX(${posStartX}vw)translateX(-180px)`
+            : `translateX(${posStartX}vw)`;
         translateY = `translateY(${startY}px)`;
       } else {
         // if we're on the right side we need to do an additional translate to account for the size of the shape div
