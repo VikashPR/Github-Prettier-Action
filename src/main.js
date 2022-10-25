@@ -42,11 +42,13 @@ function App() {
         // for randomly picking Y, we want to translate up or down so pick randomly from '-' or '' first, then pick the pixels randomly
         translateY = `translateY(${
           ["-", ""][Math.floor(Math.random() * 2)]
-        }${Math.floor(Math.random() * 200)}px)`;
+                              
+                
+                      }${Math.floor(Math.random() * 200)}px)`;
       }
 
       // store the transformation
-      let transform = `${translateX} ${translateY}`;
+      let transform = `${translateX} ${translateY}`                                   ;
 
       keyframes.push({ transform: transform });
 
