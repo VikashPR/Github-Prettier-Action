@@ -9,7 +9,6 @@ function App() {
 
   // animate function
   function animate(elem, startX, startY, bounce, duration) {
-    
     // set and store the start positions (they'll need to be the same for the end position too)let posStartX;
     if (startX === "left") {
       posStartX = 0;
@@ -41,8 +40,9 @@ function App() {
             ? `translateX(100vw) translateX(-180px)`
             : `translateX(0vw)`;
         // for randomly picking Y, we want to translate up or down so pick randomly from '-' or '' first, then pick the pixels randomly
-        translateY = `translateY(${["-", ""][Math.floor(Math.random() * 2)]
-          }${Math.floor(Math.random() * 200)}px)`;
+        translateY = `translateY(${
+          ["-", ""][Math.floor(Math.random() * 2)]
+        }${Math.floor(Math.random() * 200)}px)`;
       }
 
       // store the transformation
