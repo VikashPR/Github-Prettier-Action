@@ -12,6 +12,7 @@ function App() {
     // set and store the start positions (they'll need to be the same for the end position too)let posStartX;
 
     if (startX === "left") {
+      
       posStartX = 0;
     } else {
       posStartX = 100;
