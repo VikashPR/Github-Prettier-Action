@@ -5,7 +5,7 @@ function App() {
   var circle = document.getElementById("circle");
   var square = document.getElementById("square");
   var triangle = document.getElementById("triangle");
-  
+
   var pentagon = document.getElementById("pentagon");
 
   // animate function
