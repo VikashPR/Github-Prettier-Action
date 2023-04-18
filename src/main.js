@@ -2,8 +2,7 @@ function App() {
   var container = document.getElementById("container");
 
   // get the shape elements
-  var circle = 
-      document.getElementById("circle");
+  var circle = document.getElementById("circle");
   var square = document.getElementById("square");
   var triangle = document.getElementById("triangle");
 
