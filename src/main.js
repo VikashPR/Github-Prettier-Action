@@ -4,13 +4,9 @@ function App() {
   // get the shape elements
   var circle = document.getElementById("circle");
   var square = document.getElementById("square");
-  var triangle
-  = 
-      document.getElementById("triangle");
+  var triangle = document.getElementById("triangle");
 
-  var pentagon 
-  = 
-      document.getElementById("pentagon");
+  var pentagon = document.getElementById("pentagon");
 
   // animate function
   function animate(elem, startX, startY, bounce, duration) {
